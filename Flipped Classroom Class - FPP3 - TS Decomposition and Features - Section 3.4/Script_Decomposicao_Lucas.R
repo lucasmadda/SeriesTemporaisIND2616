@@ -52,7 +52,7 @@ us_retail_employment %>%
 us_retail_employment$Y_m_T <- us_retail_employment$Employed - us_retail_employment$`2x12-MA`
 
 us_retail_employment %>%
-  gg_subseries(Y_m_T) +
+  gg_subseries(detrended) +
   labs(
     y = "Persons - Thousands",
     title = "Total employment in US retail Componentes"
@@ -96,3 +96,4 @@ us_retail_employment %>%
   autoplot() +
   labs(title = "Classical additive decomposition of total
                   US retail employment")
+
