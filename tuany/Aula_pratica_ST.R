@@ -16,7 +16,7 @@ install.packages("forecast")
 install.packages("readxl")
 install.packages("ggplot2")
 
-library(forecast)
+library("forecast")
 library(readxl)
 library(ggplot2)
 
@@ -226,17 +226,11 @@ ErroETS
 #Instalando pacotes
 ####################
 
-install.packages("readxl")
 install.packages("fable")
-install.packages("forecast")
 install.packages("ISwR")
 install.packages("randtests")
-install.packages("ggplot2")
 install.packages("lmtest")
 
-library("readxl")
-library("fable")
-library("forecast")
 library("ISwR")
 library("randtests")
 library("ggplot2")
