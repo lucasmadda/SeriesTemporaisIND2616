@@ -37,7 +37,7 @@ options(scipen=999)
 #Leitura dos dados mensais de vendas de pão (mar/2018 a fev/2022) 
 ##################################################################
 
-dados_pad = read_excel("dadospadaria.xlsx")
+dados_pad = read_excel("data/dadospadaria.xlsx")
 dados_pad
 
 dados_pad = ts(data = dados_pad$Venda, start = c(2018,3),frequency = 12)
@@ -92,7 +92,7 @@ autoplot(dados_pad, xlab = "Tempo", ylab = "Vendas pão (un)")+
 ##Leitura dos dados de venda de máscaras descart (abr/2017 a mar/2022) 
 ######################################################################
 
-dados_farm = read_excel("dadosfarmacia.xlsx")
+dados_farm = read_excel("data/dadosfarmacia.xlsx")
 dados_farm
 
 dados_farm = ts(data = dados_farm$Venda, start = c(2017,4),frequency = 12)
@@ -131,7 +131,7 @@ autoplot(dados_farm, xlab = "Tempo", ylab = "Vendas máscaras (un)")+
 #Leitura dos dados mensais de geração de energia eólica em MW (jan/2014 a set/2020)
 ###################################################################################
 
-dados_eol = read_excel("dadoseolica.xlsx")
+dados_eol = read_excel("data/dadoseolica.xlsx")
 dados_eol
 
 
@@ -249,7 +249,7 @@ library("lmtest")
 options(scipen=999)
 
 
-dados1 = read_excel("base_consumo.xlsx")
+dados1 = read_excel("data/base_consumo.xlsx")
 dados1
 
 ###########################
